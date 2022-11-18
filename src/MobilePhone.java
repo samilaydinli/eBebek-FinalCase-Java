@@ -5,8 +5,13 @@ public class MobilePhone extends Product{
     private static int phoneId = 1;
     private int battery;
     private String color;
-    private int camResolution;
+
     private static ArrayList<MobilePhone> mobilePhones = new ArrayList<>();
+
+    //Varsılan olarak nesne eklemek istiyorsam.
+    static {
+        mobilePhones.add(new MobilePhone("iPhone 13",27000,5,500,Brand.getBrand(3),6.06,6,256,3227,"StarLight"));
+    }
 
     public MobilePhone(){
 
@@ -14,13 +19,12 @@ public class MobilePhone extends Product{
 
     //phoneId varsayılan olarak 1 atıyorum her yeni nesnede 1 artıyor ve markanın sistemde kayıtlı benzersiz numarası olusuyor.
     public MobilePhone(String name, double price, int discountRate, int stock,
-                       Brand brand, double screenSize, int ram, int memory, int battery, String color, int camResolution) {
+                       Brand brand, double screenSize, int ram, int memory, int battery, String color) {
         super(phoneId, name, price, discountRate, stock, brand, screenSize, ram, memory);
 
         phoneId++;
         this.battery = battery;
         this.color = color;
-        this.camResolution=camResolution;
     }
 
     public void menu(){
@@ -61,13 +65,11 @@ public class MobilePhone extends Product{
         input.nextLine();
         System.out.print("Ürünün Rengi : ");
         String color = input.nextLine();
-        System.out.print("Kamera çözünürlüğü : ");
-        int camResolution= input.nextInt();
         Brand.printBrands();
         System.out.print("Telefonun Markasını Seçiniz : ");
         Brand brand = Brand.getBrand(input.nextInt());
 
-        MobilePhone phoneObject = new MobilePhone(name,price,discountRate,stock,brand,screenSize,ram,memory,battery,color,camResolution);
+        MobilePhone phoneObject = new MobilePhone(name,price,discountRate,stock,brand,screenSize,ram,memory,battery,color);
         mobilePhones.add(phoneObject);
         System.out.println("Eklenen Telefonun Id : " + phoneObject.getId());
     }
@@ -78,18 +80,15 @@ public class MobilePhone extends Product{
     }
 
     public void print(ArrayList<MobilePhone> phoneList){
-        if(phoneList == null){
-            phoneList = this.mobilePhones;
-        }
         System.out.println("\nCep Telefonu Listesi");
-        System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-        System.out.println("| ID | Ürün Adı                  | Fiyatı          | Marka           | Stok Adedi   | İndirim Oranı      | RAM    | Ekran Boyutu      | Hafızası   | Pil Kapasitesi  | Renk           | Kamera    |");
-        System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("| ID | Ürün Adı                  | Fiyatı          | Marka           | Stok Adedi   | İndirim Oranı      | RAM    | Ekran Boyutu      | Hafızası   | Pil Kapasitesi  | Renk           |");
+        System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
         for(MobilePhone i : phoneList){
-            System.out.printf("| %-2s | %-25s | %-15s | %-15s | %-12s | %-18s | %-6s | %-17s | %-10s | %-15s | %-14s | %-9s | \n",
-                    i.getId(), i.getName(), i.getPrice()+" TL", i.getBrand().getName(), i.getStock(),"%"+i.getDiscountRate(), i.getRam()+" GB",
-                    i.getScreenSize()+"''", i.getMemory()+" GB", i.getBattery()+"mAh", i.getColor(), i.getCamResolution()+" MP");
+            System.out.printf("| %-2s | %-25s | %-15s | %-15s | %-12s | %-18s | %-6s | %-17s | %-10s | %-15s | %-14s |\n",
+                    i.getId(), i.getName(), i.getPrice()+" TL", i.getBrand().getName(), i.getStock(),"% "+i.getDiscountRate(), i.getRam()+" GB",
+                    i.getScreenSize()+"''", i.getMemory()+" GB", i.getBattery()+"mAh", i.getColor());
         }
     }
 
@@ -133,13 +132,5 @@ public class MobilePhone extends Product{
 
     public void setColor(String color) {
         this.color = color;
-    }
-
-    public int getCamResolution() {
-        return camResolution;
-    }
-
-    public void setCamResolution(int camResolution) {
-        this.camResolution = camResolution;
     }
 }

@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
 public abstract class Product {
-    //generic yapıda bir Brand veri tipinde bir HashSet tanımlıyorum.
-    //static HashSet<Brand> brands = new HashSet<>();
     Scanner input = new Scanner(System.in);
 
     private int id;
@@ -20,6 +18,7 @@ public abstract class Product {
     public abstract void getProducts();
     public abstract void deleteItem();
 
+
     public Product(){
 
     }
@@ -35,6 +34,7 @@ public abstract class Product {
         this.ram = ram;
         this.memory = memory;
     }
+
 
     // Sadece ıd metodunun setter ı yok çünkü değiştirilemez olacak !
     public int getId() {

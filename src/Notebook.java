@@ -5,6 +5,13 @@ public class Notebook extends Product{
     private static int notebookId = 1;
     private static ArrayList<Notebook> notebooks = new ArrayList<>();
 
+    //Varsılan olarak nesne eklemek istiyorsam.
+    static {
+        notebooks.add(new Notebook("Monster abra a5",17499,12,150,Brand.getBrand(9),15.6,16,1024));
+        notebooks.add(new Notebook("Lenovo Ideapad 3",5880,10,200,Brand.getBrand(2),15.6,4,256));
+        notebooks.add(new Notebook("MacBook Pro",27999,5,100,Brand.getBrand(3),13,16,1024));
+    }
+
     public Notebook(){
 
     }
@@ -65,10 +72,6 @@ public class Notebook extends Product{
     }
 
     public void print(ArrayList<Notebook> notebookList){
-        //bu kontrolü yapmazsam filter metotu calısmıyor !Çünkü notebookList im boş ise notebooks dizimi ata eğer dolu ise atama yapma diyorum!
-        if(notebookList == null) {
-            notebookList = this.notebooks;
-        }
         System.out.println("\nNotebook Listesi");
         System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("| ID | Ürün Adı                  | Fiyatı          | Markası         | Stok Adedi   | İndirim Oranı      | RAM    | Ekran Boyutu      | Hafızası   |");
@@ -77,7 +80,7 @@ public class Notebook extends Product{
         for (Notebook i : notebookList){
             System.out.printf("| %-2s | %-25s | %-15s | %-15s | %-12s | %-18s | %-6s | %-17s | %-10s | \n",
                     i.getId(),i.getName(),i.getPrice()+" TL",i.getBrand().getName(),i.getStock(),
-                    "%"+i.getDiscountRate(),i.getRam()+" GB",i.getScreenSize()+"''",i.getMemory()+" GB");
+                    "% "+i.getDiscountRate(),i.getRam()+" GB",i.getScreenSize()+"''",i.getMemory()+" GB");
         }
     }
 
