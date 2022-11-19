@@ -46,14 +46,20 @@
     | 1  | Samsung  | 
     | 8  | Xiaomi   |
     
-    
+ ## Contact  
 <div align="center">
-## Contact
 
 ### Şamil Aydınlı
 
-  <a href="https://github.com/samilaydinli" target="_blank">
+<a href="https://github.com/samilaydinli" target="_blank">
 <img  src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 20px;" />
 </a>
+<a href = "mailto:samilaydinli37@gmail.com?subject = Feedback&body = Message">
+<img src=https://img.shields.io/badge/send-email-email?&style=for-the-badge&logo=microsoftoutlook&color=CD5C5C alt=microsoftoutlook style="margin-bottom: 20px; margin-left:20px" />
+</a>
+<a href="https://linkedin.com/in/samilaydinli" target="_blank">
+<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 20px; margin-left:20px" />
+</a>  
+    
 </div>
 
