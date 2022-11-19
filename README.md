@@ -51,4 +51,18 @@
 
 <a href="https://www.java.com/" target="_blank"><img src="https://raw.githubusercontent.com/mehmet-akif-tanisik/ebebekJavaPracticumHomeworks/779b5d6e2264b20bcafdc3c6a517048042aa799f/images/java.svg" alt="Java" height="80" /></a>
     
+## Contact
+### Şamil Aydınlı
 
+<a href="https://github.com/samilaydinli" target="_blank">
+<img  src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 20px;" />
+</a>
+<a href = "mailto:matnsk@outlook.com?subject = Feedback&body = Message">
+<img src=https://img.shields.io/badge/send-email-email?&style=for-the-badge&logo=microsoftoutlook&color=CD5C5C alt=microsoftoutlook style="margin-bottom: 20px; margin-left:20px" />
+</a>
+<a href="https://linkedin.com/in/mehmet-akif-tanisik" target="_blank">
+<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 20px; margin-left:20px" />
+</a>  
+<a href="https://twitter.com/makiftanisik" target="_blank">
+<img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 20px; margin-left:20px" />
+</a
