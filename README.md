@@ -45,4 +45,10 @@
     | 9  | Monster  | 
     | 1  | Samsung  | 
     | 8  | Xiaomi   |
+    
+
+### Technologies
+
+<a href="https://www.java.com/" target="_blank"><img src="https://raw.githubusercontent.com/mehmet-akif-tanisik/ebebekJavaPracticumHomeworks/779b5d6e2264b20bcafdc3c6a517048042aa799f/images/java.svg" alt="Java" height="80" /></a>
+    
 
